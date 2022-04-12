@@ -48,3 +48,20 @@ console.log(document.body.children[0]);
 let anchorElement = document.getElementById("external-link");
 anchorElement.href = "https://google.com";
 // this is an alternative way to write the code on the 28th line.
+
+document.querySelector("#external-id");
+// this is an alternative to getElementById
+// we write code inside the parenthesis similar to the code we write in CSS
+// getElementById definitely need an id to get executed
+// but querySelector can be accessed even without an id
+// which means we can access it in many ways as we did in CSS
+document.querySelector("a");
+// this is like the CSS code we write like this.
+// a {
+//  color: red;
+// }
+document.querySelector("p a");
+
+// querySelector selects the "first" <a> tag in the HTML file
+// if there's more than one <a> tag and we need to access all <a> tags we can do that by using document.querySelectorAll()
+document.querySelectorAll("p a");
