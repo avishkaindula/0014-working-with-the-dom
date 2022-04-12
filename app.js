@@ -4,8 +4,8 @@ console.log(window);
 // alert is also a method built inside window object
 // as window is a global variable, we can access methods inside window without typing window.
 
-alert("Hello World!");
-window.alert("Hello World!");
+// alert("Hello World!");
+// window.alert("Hello World!");
 // both of this code are the same.
 
 // document is an objects which is seated inside the window object
@@ -24,3 +24,23 @@ console.log(document);
 
 console.dir(document);
 // This is how we see the real representation of JavaScript objects of the DOM inside the console
+
+document.body.children[1].children[0].href = "https://google.com";
+// this is how we drilling into the DOM to select & change html elements
+// in here, we are trying to change the link we wrote in our html code through the DOM
+// children[1] is the paragraph
+// children[0] is the a element
+// but when we run this code, it shows an error if the <script src ="app.js"></script> code sits "before" the <a> tag.
+// one way to fix this is to place the <script src ="app.js"></script> code "after" the <a> tag.
+// another way to do this is to add a defer attribute to the script tag
+
+console.log(document.body.firstElementChild);
+// result = <h1>Hi there!</h1>
+// this is another way of drilling into DOM
+
+console.log(document.body.firstChild);
+// result = #text
+// by using .firstChild we actually access the firstChild node
+
+console.log(document.body.children[0]);
+// result = <h1>Hi there!</h1>
