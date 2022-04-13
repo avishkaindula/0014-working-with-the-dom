@@ -25,7 +25,7 @@ console.log(document);
 console.dir(document);
 // This is how we see the real representation of JavaScript objects of the DOM inside the console
 
-// document.body.children[1].children[0].href = "https://google.com";
+document.body.children[1].children[0].href = "https://google.com";
 // this is how we drilling into the DOM to select & change html elements
 // in here, we are trying to change the link we wrote in our html code through the DOM
 // children[1] is the paragraph
@@ -46,7 +46,7 @@ console.log(document.body.children[0]);
 // result = <h1>Hi there!</h1>
 
 let anchorElement = document.getElementById("external-link");
-anchorElement.href = "https://google.com";
+// anchorElement.href = "https://google.com";
 // this is an alternative way to write the code on the 28th line.
 
 document.querySelector("#external-id");
