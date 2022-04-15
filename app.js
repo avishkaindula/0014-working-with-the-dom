@@ -72,6 +72,7 @@ document.querySelectorAll("p a");
 // --adding a new element
 // --deleting an existing element
 // --moving an existing element to another place
+// (updating the value of the element can also be added here!)
 
 // -------------------------------------------------------------------------------------------------------------------------------
 
@@ -140,3 +141,6 @@ thirdParagraph.innerHTML = "Hi! This is <strong>important!</strong>";
 // This means the browser identifies the tags which sits inside innerHTML
 // But the browser doesn't recognize the tags inside textContent
 
+// -------------------------------------------------------------------------------------------------------------------------------
+
+// The above code on the 137th and 139th line shows us how to UPDATE the value to!
